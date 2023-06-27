@@ -11,12 +11,12 @@
 
   {{-- @dump($posts) --}}
   @foreach ($posts as $data)
-      {{-- <ul>
+      <ul>
         <li>{{$data->title}}</li>
-      </ul> --}}
-      <h1>
+      </ul>
+      {{-- <h1>
         @dump($data)
-      </h1>
+      </h1> --}}
   @endforeach
 
 </x-layouts.app>
