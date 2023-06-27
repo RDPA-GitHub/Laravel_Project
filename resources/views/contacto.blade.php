@@ -1,16 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Contacto</title>
-</head>
-<body>
-  
-  <h1>Contacto</h1>
-  @include('partials.navigation');
-
-
-</body>
-</html>
+@extends('layouts.app')
+@section('color', '#B4BDC9')
+@section('title', 'Contacto')
+@section('content')
+    <h1>Contacto</h1>
+@endsection
