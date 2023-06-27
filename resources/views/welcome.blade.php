@@ -8,13 +8,8 @@
 </head>
 <body style="background: #B4BDC9;">
     <h1 style="text-align: center; color: red; font-family: 'monospace';">INICIO</h1>
-    <ul>
-        <li><a href="{{route('home')}}">Home</a></li>
-        <li><a href="{{route('contacto')}}">Contacto</a></li>
-        <li><a href="{{route('blog')}}">Blog</a></li>
-        <li><a href="<?= route('Prueba') ?>">Prueba - PHP</a></li>
-        <li><a href="{{route('about')}}">Acerca de mi</a></li>
-    </ul>
+    
+    @include('partials.navigation');
 
 </body>
 </html>

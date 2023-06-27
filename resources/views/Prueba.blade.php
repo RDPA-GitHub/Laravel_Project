@@ -11,5 +11,8 @@
       PRUEBA PHP
   </h1>
 
+  @include('partials.navigation');
+
+
 </body>
 </html>
