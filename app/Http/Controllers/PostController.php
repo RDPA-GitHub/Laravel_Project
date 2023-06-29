@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -16,9 +17,10 @@ class PostController extends Controller
             ['title' => 'Fourth Post']
         ]; */
 
-        $posts = DB::table('posts')->get();
+        /* $posts = DB::table('posts')->get(); */
+         $posts = Post::get();
 
-        return view('Prueba', ['posts' => $posts]);
+        return view('Prueba',  ['posts'=>$posts]);
 
     }
 }

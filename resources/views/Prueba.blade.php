@@ -14,7 +14,7 @@
       <ul>
         <li>{{$data->title}}</li>
       </ul>
-      {{-- <h1>
+     {{--  <h1>
         @dump($data)
       </h1> --}}
   @endforeach
