@@ -6,7 +6,7 @@
 
 <x-layouts.app title="Prueba" color="#C9BEB4">
   <h1 style="color: #211D19; text-align: center; font-family: arial; margin-top: 35px;">
-      PRUEBA PHP
+      PRUEBA PHP Actualizacion
   </h1>
 
   {{-- @dump($posts) --}}
