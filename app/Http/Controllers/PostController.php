@@ -18,6 +18,7 @@ class PostController extends Controller
         ]; */
 
         /* $posts = DB::table('posts')->get(); */
+
          $posts = Post::get();
 
         return view('Prueba',  ['posts'=>$posts]);
