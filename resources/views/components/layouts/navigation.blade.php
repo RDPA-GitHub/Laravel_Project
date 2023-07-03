@@ -23,7 +23,7 @@
       15px; color:
        white; 
        font-weight:bold;"
-                href="<?= route('Prueba') ?>">Prueba - PHP</a></li>
+                href="<?= route('posts.index') ?>">Prueba - PHP</a></li>
         <li><a style="text-decoration: none; 
       font-size: 
       15px; color:

@@ -43,5 +43,10 @@ Route::view('/', 'welcome')->name('home');
     Route::view('/blog', 'blog')->name('blog');
     Route::view('/contacto', 'contacto')->name('contacto');
     /* Route::view('/Prueba', 'Prueba', ['posts' => $posts])->name('Prueba'); */
-    Route::get('/Prueba', [PostController::class, 'index'])->name('Prueba'); 
+    Route::get('/Prueba', [PostController::class, 'index'])->name('posts.index'); 
+
+// ********************************************************************************
+// Rutas de Enlace: 
+    Route::get('/Prueba/{data}', [PostController::class, 'show'])->name('posts.show');
+    
     

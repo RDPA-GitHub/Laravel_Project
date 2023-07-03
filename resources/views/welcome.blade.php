@@ -10,6 +10,6 @@
     {{-- <x-slot name="title">
         HOME
     </x-slot> --}}
-    <h1 style="text-align: center; color: red; font-family: 'monospace';">INICIO</h1>
+    <h1 class="text-center text-danger mt-3">INICIO</h1>
 </x-layouts.app>     
  {{--  @endcomponent --}}
