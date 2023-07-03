@@ -55,7 +55,12 @@ class PostController extends Controller
             'title' => ['required', 'min:4', 'max:15'],
             'body' => ['required']
 
-        ]);
+        ],
+        [
+            'title.required' => 'El Campo :attribute es Obligatorio',
+            'body.required' => 'El Campo :attribute es Obligatorio'
+        ]
+    );
 
         $resp = new Post;
         $resp->title = $respuesta->input('title');
