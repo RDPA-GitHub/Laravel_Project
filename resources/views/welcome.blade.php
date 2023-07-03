@@ -6,10 +6,10 @@
  --}}
 
  {{-- @component('components.layout') --}}
-<x-layouts.app title="HOME" :sum="2+2">
+ <h1 class="text-center text-danger mt-3">INICIO</h1>
+<x-layouts.app title="HOME" />
     {{-- <x-slot name="title">
         HOME
     </x-slot> --}}
-    <h1 class="text-center text-danger mt-3">INICIO</h1>
-</x-layouts.app>     
+     
  {{--  @endcomponent --}}

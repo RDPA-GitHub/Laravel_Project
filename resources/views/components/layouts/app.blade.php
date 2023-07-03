@@ -17,10 +17,10 @@
 <body style="background: {{$color ?? '#B4BDC9'}}">
 
   {{-- @yield('content') --}}
+  <x-layouts.navigation />
   {{$slot}}
 
   {{--  @include('partials.navigation') --}}
-  <x-layouts.navigation />
 
 </body>
 </html>

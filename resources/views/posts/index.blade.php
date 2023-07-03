@@ -4,11 +4,13 @@
 @section('content')
 @endsection --}}
 
+<h1 class="text-center text-secondary mt-3">
+    PRUEBA PHP
+</h1>
+
 <x-layouts.app title="Prueba" color="#C9BEB4">
-    <h1 class="text-center text-secondary mt-3">
-        PRUEBA PHP
-    </h1>
-</x-layouts.app>
+    <a href="{{route ('posts.create')}}" style="text-decoration: none" class="text-secondary fw-bold ms-3">Create New Post</a>
+
 {{-- @dump($posts) --}}
 @foreach ($posts as $data)
     <ul class="mb-0">
@@ -22,6 +24,7 @@
       </h1> --}}
 @endforeach
 <br>
+
 @foreach ($posts2 as $data => $title)
     <ul class="mb-0">
         <li> {{ $data + 1 }} - {{ $title->title }}</li>
@@ -30,3 +33,6 @@
         @dump($data)
       </h1> --}}
 @endforeach
+</x-layouts.app>
+
+

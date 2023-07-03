@@ -4,6 +4,6 @@
 @section('content')
 @endsection --}}
 
-<x-layouts.app title="Blog">
-  <h1>Blog</h1>
-</x-layouts.app>
+<h1>Blog</h1>
+<x-layouts.app title="Blog" />
+

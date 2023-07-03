@@ -43,4 +43,12 @@ class PostController extends Controller
         return view('posts.show', ['perrito'=>$post]);
 
     }
+
+    public function create(){
+        return view('posts.create');
+    }
+
+    public function store(){
+        return 'PROCESS FORM! XD';
+    }
 }
