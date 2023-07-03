@@ -55,6 +55,8 @@ class PostController extends Controller
         $resp->body = $respuesta->input('body');
         $resp->save();
 
+        session()->flash('status', 'Post Created');
+
         return to_route('posts.index');
     }
 }

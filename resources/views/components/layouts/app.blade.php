@@ -17,6 +17,12 @@
 <body style="background: {{$color ?? '#B4BDC9'}}">
 
   {{-- @yield('content') --}}
+  @if (session('status'))
+    <div class="alert alert-success w-25 text-center mx-auto fw-bold text-success mt-3" role="alert">
+        {{ session('status') }}
+    </div>
+@endif
+
   <x-layouts.navigation />
   {{$slot}}
 

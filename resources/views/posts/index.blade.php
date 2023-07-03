@@ -9,30 +9,29 @@
 </h1>
 
 <x-layouts.app title="Prueba" color="#C9BEB4">
-    <a href="{{route ('posts.create')}}" style="text-decoration: none" class="text-secondary fw-bold ms-3">Create New Post</a>
+    <a href="{{ route('posts.create') }}" style="text-decoration: none" class="text-secondary fw-bold ms-3">Create New
+        Post</a>
 
-{{-- @dump($posts) --}}
-@foreach ($posts as $data)
-    <ul class="mb-0">
-        {{-- <li>{{ $data->title }}</li> --}}
-        <li><a href="{{route('posts.show', $data)}}" class="text-success fw-bold" style="text-decoration: none">
-                {{ $data->title }}
-            </a></li>
-    </ul>
-    {{--  <h1>
+    {{-- @dump($posts) --}}
+    @foreach ($posts as $data)
+        <ul class="mb-0">
+            {{-- <li>{{ $data->title }}</li> --}}
+            <li><a href="{{ route('posts.show', $data) }}" class="text-success fw-bold" style="text-decoration: none">
+                    {{ $data->title }}
+                </a></li>
+        </ul>
+        {{--  <h1>
         @dump($data)
       </h1> --}}
-@endforeach
-<br>
+    @endforeach
+    <br>
 
-@foreach ($posts2 as $data => $title)
-    <ul class="mb-0">
-        <li> {{ $data + 1 }} - {{ $title->title }}</li>
-    </ul>
-    {{--  <h1>
+    @foreach ($posts2 as $data => $title)
+        <ul class="mb-0">
+            <li> {{ $data + 1 }} - {{ $title->title }}</li>
+        </ul>
+        {{--  <h1>
         @dump($data)
       </h1> --}}
-@endforeach
+    @endforeach
 </x-layouts.app>
-
-
