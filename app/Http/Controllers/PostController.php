@@ -50,6 +50,13 @@ class PostController extends Controller
 
     public function store(Request $respuesta){
         
+        $respuesta->validate([
+
+            'title' => ['required', 'min:4', 'max:15'],
+            'body' => ['required']
+
+        ]);
+
         $resp = new Post;
         $resp->title = $respuesta->input('title');
         $resp->body = $respuesta->input('body');

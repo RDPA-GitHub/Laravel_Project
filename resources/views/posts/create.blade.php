@@ -9,11 +9,17 @@
                   @csrf
                     <div class="form-group mb-3">
                         <label class="fw-bold text-secondary" for="title">Title:</label>
-                        <input name="title" type="text" class="form-control" placeholder="Escribe el Titulo...">
+                        <input name="title" type="text" class="form-control" placeholder="Escribe el Titulo..." value="{{old('title')}}">
+                        @error('title')
+                            <small class="text-danger">{{$message}}</small>
+                        @enderror
                     </div>
                     <div class="form-group mb-3">
                         <label class="fw-bold text-secondary" for="title">Body:</label>
-                        <textarea name="body" type="text" class="form-control" placeholder="Escribe la descripcion..."></textarea>
+                        <textarea name="body" type="text" class="form-control" placeholder="Escribe la descripcion..." >{{old('body')}}</textarea>
+                        @error('body')
+                            <small class="text-danger">{{$message}}</small>
+                        @enderror
                     </div>
                     <div class="text-center">
                         <button type="submit" class="btn btn-success mt-3">
