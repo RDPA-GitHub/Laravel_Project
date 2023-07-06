@@ -6,7 +6,7 @@
  --}}
 
  {{-- @component('components.layout') --}}
- <h1 class="text-center text-danger mt-3">INICIO</h1>
+ <h1 class="text-center text-danger mt-3">INICIO Actualizacion</h1>
 <x-layouts.app title="HOME" />
     {{-- <x-slot name="title">
         HOME
