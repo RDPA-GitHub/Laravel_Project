@@ -30,5 +30,8 @@
        white; 
        font-weight:bold;"
                 href="{{ route('about') }}">Acerca de mi</a></li>
+
+        <li><a class="btn btn-primary py-1 mt-3 fw-bold"
+                href="{{ route('register') }}" >Register</a></li>
     </ul>
 </nav>

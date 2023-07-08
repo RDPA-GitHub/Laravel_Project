@@ -13,16 +13,18 @@
         Post</a>
 
     {{-- @dump($posts) --}}
+    
+    @auth
     @foreach ($posts as $data)
-        <ul class="mb-0">
-            {{-- <li>{{ $data->title }}</li> --}}
-            <li><a href="{{ route('posts.show', $data) }}" class="text-success fw-bold" style="text-decoration: none">
-                    {{ $data->title }}
-                </a></li>
-        </ul>
-        {{--  <h1>
+    <ul class="mb-0">
+        {{-- <li>{{ $data->title }}</li> --}}
+        <li><a href="{{ route('posts.show', $data) }}" class="text-success fw-bold" style="text-decoration: none">
+            {{ $data->title }}
+        </a></li>
+    </ul>
+    {{--  <h1>
         @dump($data)
-      </h1> --}}
+    </h1> --}}
     @endforeach
     <br>
 
@@ -34,4 +36,6 @@
         @dump($data)
       </h1> --}}
     @endforeach
+    @endauth
+    
 </x-layouts.app>
