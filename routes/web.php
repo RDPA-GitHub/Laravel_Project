@@ -38,21 +38,22 @@ use App\Models\Post;
 // -----------------------------------------------------------------------------------
 
 // Para Mostrar una Vista normal podemos hacerlo de la siguiente manera
-Route::view('/', 'welcome')->name('home');
+
+   Route::view('/', 'welcome')->name('home')->middleware('auth');
 
 // Generamos varias vistas a mostrar con distintas rutas
 
-    Route::view('/about', 'about')->name('about')/* ->middleware('auth') */;
-    Route::view('/blog', 'blog')->name('blog');
-    Route::view('/contacto', 'contacto')->name('contacto');
+    Route::view('/about', 'about')->name('about')->middleware('auth');
+    Route::view('/blog', 'blog')->name('blog')->middleware('auth');
+    Route::view('/contacto', 'contacto')->name('contacto')->middleware('auth');
     /* Route::view('/Prueba', 'Prueba', ['posts' => $posts])->name('Prueba'); */
     
     // ********************************************************************************
     // Rutas de Enlace: 
-    Route::get('/Prueba', [PostController::class, 'index'])->name('posts.index'); 
-    Route::get('/Prueba/create', [PostController::class, 'create'])->name('posts.create');
-    Route::post('Prueba', [PostController::class, 'store'])->name('posts.store');
-    Route::get('/Prueba/{data}', [PostController::class, 'show'])->name('posts.show');
+    Route::get('/Prueba', [PostController::class, 'index'])->name('posts.index')->middleware('auth'); 
+    Route::get('/Prueba/create', [PostController::class, 'create'])->name('posts.create')->middleware('auth');
+    Route::post('Prueba', [PostController::class, 'store'])->name('posts.store')->middleware('auth');
+    Route::get('/Prueba/{data}', [PostController::class, 'show'])->name('posts.show')->middleware('auth');
 
     // *********************************************************************************
     // Ruta Login:

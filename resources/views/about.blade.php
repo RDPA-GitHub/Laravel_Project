@@ -5,5 +5,5 @@
 @endsection --}}
 
 <h1>Acerca de mi</h1>
-<x-layouts.app title="" />
+<x-layouts.app title="{{auth()->User()->name}}" />
 
