@@ -10,7 +10,7 @@
 
 <x-layouts.app title="Prueba" color="#C9BEB4">
     <a href="{{ route('posts.create') }}" style="text-decoration: none" class="text-secondary fw-bold ms-3">Create New
-        Post</a>
+        Postsasd</a>
 
     {{-- @dump($posts) --}}
     
