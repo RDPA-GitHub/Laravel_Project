@@ -11,7 +11,7 @@
                   <input name="name" 
                          type="text" 
                          class="form-control" 
-                         placeholder="Escribe tu nombre" 
+                         placeholder="Escribe tu nombre Actualizando" 
                          autofocus="autofocus"
                          value="{{old('title')}}">
                   @error('name')
