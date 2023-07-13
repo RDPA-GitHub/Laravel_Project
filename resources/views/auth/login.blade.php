@@ -20,7 +20,7 @@
               </div> --}}
               <div class="form-group mb-3">
                   <label class="fw-bold text-secondary" for="">Email:</label>
-                  <input name="email" type="email" class="form-control" placeholder="Escribe tu email" value="{{old('body')}}">
+                  <input name="email" type="email" class="form-control" placeholder="Escribe tu emaidl" value="{{old('body')}}">
                   @error('email')
                       <small class="text-danger">{{$message}}</small>
                   @enderror
