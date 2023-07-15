@@ -1,4 +1,4 @@
-<h1 class="text-center text-light mt-3">Login</h1>
+<h1 class="text-center text-light mt-3">Loginsd</h1>
 <x-layouts.app title="Register" />
 
 <div class="container w-25">
