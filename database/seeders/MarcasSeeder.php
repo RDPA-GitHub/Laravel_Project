@@ -64,7 +64,7 @@ class MarcasSeeder extends Seeder
             ['COD_PROV' => '48', 'DESC_PROV' => 'ACADIAN'],
             ['COD_PROV' => '49', 'DESC_PROV' => 'ACADIAN'],
             ['COD_PROV' => '50', 'DESC_PROV' => 'ACADIAN'],
-            ['COD_PROV' => '1', 'DESC_PROV' => 'ACADIAN'],
+            ['COD_PROV' => '13', 'DESC_PROV' => 'ACADIAN'],
             ['COD_PROV' => '1', 'DESC_PROV' => 'ACADIAN'],
             ['COD_PROV' => '1', 'DESC_PROV' => 'ACADIAN'],
             ['COD_PROV' => '1', 'DESC_PROV' => 'ACADIAN'],
