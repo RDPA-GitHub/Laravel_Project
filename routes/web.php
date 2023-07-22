@@ -49,11 +49,13 @@ use App\Models\Post;
     /* Route::view('/Prueba', 'Prueba', ['posts' => $posts])->name('Prueba'); */
     
     // ********************************************************************************
-    // Rutas de Enlace: 
-    Route::get('/Prueba', [PostController::class, 'index'])->name('posts.index')->middleware('auth'); 
-    Route::get('/Prueba/create', [PostController::class, 'create'])->name('posts.create')->middleware('auth');
-    Route::post('Prueba', [PostController::class, 'store'])->name('posts.store')->middleware('auth');
-    Route::get('/Prueba/{data}', [PostController::class, 'show'])->name('posts.show')->middleware('auth');
+    // Rutas de Enlace grupo pruebas: 
+    Route::prefix('Prueba')->group(function(){
+        Route::get('/', [PostController::class, 'index'])->name('posts.index')->middleware('auth'); 
+        Route::get('/create', [PostController::class, 'create'])->name('posts.create')->middleware('auth');
+        Route::post('/', [PostController::class, 'store'])->name('posts.store')->middleware('auth');
+        Route::get('/{data}', [PostController::class, 'show'])->name('posts.show')->middleware('auth');
+    });
 
     // *********************************************************************************
     // Ruta Login:
