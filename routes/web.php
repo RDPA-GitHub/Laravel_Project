@@ -49,7 +49,7 @@ use App\Models\Post;
     /* Route::view('/Prueba', 'Prueba', ['posts' => $posts])->name('Prueba'); */
     
     // ********************************************************************************
-    // Rutas de Enlace grupo pruebas: 
+    // Rutas de Enlace grupo pruebas : 
     Route::prefix('Prueba')->group(function(){
         Route::get('/', [PostController::class, 'index'])->name('posts.index')->middleware('auth'); 
         Route::get('/create', [PostController::class, 'create'])->name('posts.create')->middleware('auth');
